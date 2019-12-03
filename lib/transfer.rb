@@ -19,7 +19,8 @@ class Transfer
       receiver.balance += @amount
       @status = "complete"
     else
-      reject_transfer
+      @status = "rejected"
+      ""
     end
     # if valid? && sender.balance > @amount && @status == "pending"
     #   sender.balance -= @amount
