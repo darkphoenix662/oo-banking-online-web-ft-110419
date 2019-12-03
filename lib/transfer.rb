@@ -15,7 +15,7 @@ class Transfer
   
   def reject_transfer
     @status = "rejected"
-    ""
+    
   end
   
   def execute_transaction
